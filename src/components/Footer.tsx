@@ -1,3 +1,6 @@
 export default function Footer() {
-  return <footer>All copyright reserved &copy; 2025</footer>;
+  return <footer style={{
+    background: 'lightgray',
+    padding: '1.5rem'
+  }}>Footer</footer>;
 }
