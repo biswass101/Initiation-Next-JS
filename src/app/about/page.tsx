@@ -1,3 +1,4 @@
+//static metadata
 export const metadata = {
     title: "About Learning Next js"
 }

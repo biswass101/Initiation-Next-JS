@@ -4,12 +4,13 @@ type Props = {
   params: Promise<{ productId: string }>;
 };
 
+//dynammic metadata
 export const generateMetadata = async({params}: Props): Promise<Metadata>  => {
     const id = (await params).productId;
     const title = await new Promise((resolve) => {
         setTimeout(() => {
             resolve(`Iphone ${id}`);
-        })
+        }, 200);
     })
     return {
         title: `Product ${title}`,
