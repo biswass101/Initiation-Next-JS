@@ -12,7 +12,7 @@ type Album = {
 };
 
 async function getUserPosts(userId: string) {
-  //intentional delay
+  
   await new Promise((resolve) => setTimeout(resolve, 2000));
 
   const res = await fetch(
@@ -22,7 +22,7 @@ async function getUserPosts(userId: string) {
 }
 
 async function getUserAlbums(userId: string) {
-  //intentional delay
+ 
   await new Promise((resolve) => setTimeout(resolve, 2000));
 
   const res = await fetch(
